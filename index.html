@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+</head>
+<body>
+
+    <div id="app" class="container">
+        <!-- title -->
+        <header class=" header">
+            <h1>TO DO LIST</h1>
+        </header>
+
+        <!-- input -->
+        <section class="new-todo">
+            <input type="text"
+                   placeholder="Write here things to do..."
+            >
+            <button class="btn color-6">add</button>
+
+        </section>
+
+        <!-- to do list-->    
+        <section class="todo-container">
+           <ul>
+               <li class =" todo">
+                   <span> text</span>
+                   <i class="fas fa-times"></i>
+
+               </li>
+               <li class =" todo">
+                <span> text</span>
+                <i class="fas fa-times"></i>
+
+            </li>
+            <li class =" todo">
+                <span> text</span>
+                <i class="fas fa-times"></i>
+
+            </li>
+           </ul>
+        </section>
+    </div>
+    
+
+
+
+    <!-- js -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -32,21 +32,13 @@
         <!-- to do list-->    
         <section class="todo-container">
            <ul>
-               <li class =" todo">
-                   <span> text</span>
+               <!-- 1. stampa in pag item di todo -->
+               <li class =" todo"  v-for= "todo in todos">
+                   <span> {{todo.text}} </span>
                    <i class="fas fa-times"></i>
 
                </li>
-               <li class =" todo">
-                <span> text</span>
-                <i class="fas fa-times"></i>
-
-            </li>
-            <li class =" todo">
-                <span> text</span>
-                <i class="fas fa-times"></i>
-
-            </li>
+            
            </ul>
         </section>
     </div>

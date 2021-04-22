@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background:rgb(228, 243, 207);
+    background:rgb(226, 243, 217);
     color: rgb(58, 90, 53);
     font-family:sans-serif;
     font-weight: 600;
@@ -45,6 +45,7 @@
     display: flex;
     padding: 20px 30px;
     list-style: none;
+    text-transform: uppercase;
     border-bottom: 1px solid rgb(205, 226, 188);
 }
 
@@ -87,3 +88,4 @@
 .btn.color-6 {
     background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
     box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+}

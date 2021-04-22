@@ -3,3 +3,26 @@
 - predisporre un input per aggiungere un nuovo item alla lista: digitando il tasto invio oppure ciccando su un pulsante, il testo digitato viene aggiunto alla lista
 - ogni item ha una "x" associata: cliccando su di essa, l'item viene rimosso dalla lista
 */
+
+
+const app = new Vue({
+    el:"#app",
+    data:{
+        todos: [
+            {
+                text: "fare la spesa",
+                status: true,
+            },
+            {
+                text: "studiare",
+                status: true,
+            },
+            {
+                text: "seguire la lezione",
+                status: true,
+            },
+
+        ]
+        
+    },
+});

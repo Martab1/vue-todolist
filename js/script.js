@@ -2,13 +2,16 @@
 - stampare in pagina un item per ogni elemento contenuto in un array di todo
 - predisporre un input per aggiungere un nuovo item alla lista: digitando il tasto invio oppure ciccando su un pulsante, il testo digitato viene aggiunto alla lista
 - ogni item ha una "x" associata: cliccando su di essa, l'item viene rimosso dalla lista
+
+BONUS 
+- modifica testo del todo (update text)
 */
 
 
 const app = new Vue({
     el:"#app",
     data:{
-        // array di oggetti todos
+        // COLLEZIONE OGGETTI TODOS
         todos: [
             {
                 text: "fare la spesa",
@@ -26,10 +29,11 @@ const app = new Vue({
         ],
         // nuovo to do in input (v-model)
         newTodo: "",
+        deletedTOdO:[],
         
     },
     methods:{
-        // aggiunta to do (a eventi di @click & @keyup)
+        // AGGIUNTA TO DO  (a eventi di @click & @keyup)
         addTodo(){
             if (this.newTodo != ""){
                 this.todos.push({
@@ -46,12 +50,29 @@ const app = new Vue({
 
             
         },
-        // rimuovo to do dalla lista tramite l'index (al @click)
+        // RIMUOVO TO DO  dalla lista tramite l'index (al @click)
         removeTodo(index){
          this.todos.splice(index,1);
 
+         // conservare i deleted 
+        //  const deleted = this.todos.splice(index,1)[0];
+        //   if (){
+
+        //   }
+
+
         },
+        // MODIFICO STATUS (on/off al @click)
+        updateStatus(index){
+           this.todos[index].status = ! this.todos[index].status;
+           
+        },
+
+
+        // update text
+        
     }
+
 
 
 

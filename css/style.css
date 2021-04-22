@@ -10,12 +10,16 @@
 
 }
 
-
 /* LAYOUT */
+ 
 
 .container{
+    position:absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
     width: 700px;
-    margin: 200px auto;
     text-align: center;
    
 }
@@ -32,9 +36,9 @@
     outline: 0;
     margin-top: 20px;
     margin-right: 30px;
-    border-bottom: 1px solid rgba(196, 233, 184, 0.801);
-    background: rgb(243, 248, 239);
+    border-bottom: 2px solid rgba(175, 207, 164, 0.801);
     border-radius: 2px;   
+    opacity: 0.5;
 }
 
 .todo-container{
@@ -89,3 +93,19 @@
     background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
     box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
 }
+
+
+/* completed */
+
+.todo .completed {
+    text-decoration: line-through;
+}
+
+
+svg{
+    position: fixed;
+    left:0;
+    bottom: 0;
+    height:100vh;
+}
+

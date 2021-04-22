@@ -24,22 +24,27 @@
         <section class="new-todo">
             <input type="text"
                    placeholder="Write here things to do..."
+                   v-model.trim="newTodo"
+                   @keyup.enter="addTodo"
+                   ref="focusTodo"
             >
-            <button class="btn color-6">add</button>
+            <button @click="addTodo" class="btn color-6">add</button>
 
         </section>
 
         <!-- to do list-->    
         <section class="todo-container">
-           <ul>
-               <!-- 1. stampa in pag item di todo -->
-               <li class =" todo"  v-for= "todo in todos">
+           <ul v-if="todos.length > 0">
+              
+               <li class =" todo"  v-for= "(todo,index) in todos">
                    <span> {{todo.text}} </span>
-                   <i class="fas fa-times"></i>
-
-               </li>
+                   <i class="fas fa-times"
+                      @click="removeTodo(index)"
+                   ></i>
+                </li>
             
            </ul>
+           <h2 v-else>well done. You finished the to-do list!</h2>
         </section>
     </div>
     

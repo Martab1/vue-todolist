@@ -10,6 +10,20 @@
 
 }
 
+/* HEADER */
+
+.header h1{
+    color: rgb(21, 151, 21);
+}
+.header h1 span:first-child{
+    color:#c4cc4f;
+}
+
+.header h1 span:last-child{
+    color:#62b9c9;
+}
+
+
 /* LAYOUT */
  
 
@@ -101,11 +115,13 @@
     text-decoration: line-through;
 }
 
+/* wave */
 
 svg{
     position: fixed;
     left:0;
     bottom: 0;
     height:100vh;
+    
 }
 
